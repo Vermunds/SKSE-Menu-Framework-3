@@ -27,3 +27,4 @@ FUNCTION_PREFIX int64_t RegisterEvent(Event::EventCallback callback);
 FUNCTION_PREFIX int64_t RegisterEventPriority(Event::EventCallback callback, float priority);
 FUNCTION_PREFIX void UnregisterEvent(int64_t id);
 FUNCTION_PREFIX float GetMenuFrameworkVersion();
+FUNCTION_PREFIX WindowInterface* GetMainWindow();

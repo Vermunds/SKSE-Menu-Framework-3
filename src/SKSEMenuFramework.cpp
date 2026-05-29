@@ -5,6 +5,7 @@
 #include "Renderer.h"
 #include "UI.h"
 #include "TextureLoader.h"
+#include "WindowManager.h"
 
 #define MENU_FRAMEWORK_VERSION 3.7f
 
@@ -100,3 +101,5 @@ int64_t RegisterEventPriority(Event::EventCallback callback, float priority) {
 void UnregisterEvent(int64_t id) { Event::RemoveEventListener(id); }
 
 float GetMenuFrameworkVersion() { return MENU_FRAMEWORK_VERSION; }
+
+WindowInterface* GetMainWindow() { return WindowManager::MainInterface; }
